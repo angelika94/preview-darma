@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="vue-wp">
+    <title>vuewp | happy developers, happy clients</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbJJREFUeNp8008o5GEcx3GD2AaTzJr8PVi0B4NtHZYSqy2UaVcR2+62cqDc5OSgPdj2suXktlIkcqA9kOUmbiZ/apuai9pBiD1pk43B+1uf0S8NT72aX888v+/v+X6f7+PyeBsTHhmjqEI9LuMtSEp1F9+fS0QDPuEVcpCLLBzgv3NxsuO5B3VwI4QprOAF5vAR4wpwiEFEnQHeoA0juEInLL8S+JCC39qZRwHudmC/e5jEMM5RhFrsYgu/cKP1z5CH/URNVCOCRbzVXB+G0IR3yNCLVswxtDqL+Bmzyj2AQssPP/XCP3QgG9tYRzvWknVUNdjUCdgfx2h21GcVr/Ed/Sq07WbeAviRiacKYFs9ceQbG7aTJ1rrQroV2FKY1ssTCGrBDkpVdRuVqMCSbRvLKEevBbi2WqiQXuX+Q0W0E/iLbzreiIpqp1RggWKnYEV5jhYsaO4rvmBaBbYuDCMN3SrwXR9cKI2AipmlfF+qH8J6PlSb2ykN3G/lPzhSSwfVVBso09c+oEtdGFLaUVec2+jRTvz6uk8BD5Re5KHLFBtnmNGR2oXKx3ucxrvOtwIMAJ0vX3xzv89GAAAAAElFTkSuQmCC">
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbJJREFUeNp8008o5GEcx3GD2AaTzJr8PVi0B4NtHZYSqy2UaVcR2+62cqDc5OSgPdj2suXktlIkcqA9kOUmbiZ/apuai9pBiD1pk43B+1uf0S8NT72aX888v+/v+X6f7+PyeBsTHhmjqEI9LuMtSEp1F9+fS0QDPuEVcpCLLBzgv3NxsuO5B3VwI4QprOAF5vAR4wpwiEFEnQHeoA0juEInLL8S+JCC39qZRwHudmC/e5jEMM5RhFrsYgu/cKP1z5CH/URNVCOCRbzVXB+G0IR3yNCLVswxtDqL+Bmzyj2AQssPP/XCP3QgG9tYRzvWknVUNdjUCdgfx2h21GcVr/Ed/Sq07WbeAviRiacKYFs9ceQbG7aTJ1rrQroV2FKY1ssTCGrBDkpVdRuVqMCSbRvLKEevBbi2WqiQXuX+Q0W0E/iLbzreiIpqp1RggWKnYEV5jhYsaO4rvmBaBbYuDCMN3SrwXR9cKI2AipmlfF+qH8J6PlSb2ykN3G/lPzhSSwfVVBso09c+oEtdGFLaUVec2+jRTvz6uk8BD5Re5KHLFBtnmNGR2oXKx3ucxrvOtwIMAJ0vX3xzv89GAAAAAElFTkSuQmCC">
+    <link href="https://fonts.googleapis.com/css?family=Alice|Kanit:400,500|PT+Serif:400,700" rel="stylesheet">
+    <link href="/app/css/style.css" rel="stylesheet">
+    <script type="text/javascript">var routes = [{name:"about-us",path:"/about-us/",component:"AboutUsView"},{name:"our-investments-approach",path:"/our-investments-approach/",component:"OurInvestmentApproachView"},{name:"insights",path:"/insights/",component:"InsightsView"},{name:"blog",path:"http://blog.darma.com",component:":External"},{name:"contact",path:"/contact/",component:"ContactView"},{name:"blockchain",path:"/our-investments-approach/blockchain/",component:"BlockchainDemandView"},{name:"thesis",path:"/our-investments-approach/thesis/",component:"OurInvestmentThesisView"},{name:"risk",path:"/our-investments-approach/risk/",component:"RiskManagementFocusView"},{name:"investment",path:"/our-investments-approach/investment/",component:"InvestmentStrategiesView"}];</script>
+    <script type="text/javascript">
+        // var rootElement = document.querySelectorAll('html')[0];
+        // function adjust(e) {
+        //     var fontSize = 4, baseWidth = 1680;
+        //     if(window.matchMedia('(min-width: 896px)').matches) {
+        //         fontSize = (window.innerWidth * 4 / baseWidth) * 1.0 - ((window.innerWidth - 896) * 2.4 / (3200 - 896));
+        //     }
+        //     rootElement.style.fontSize = fontSize + 'px';
+        // }
+        // adjust();
+        // if(document.readyState === "complete") { adjust(); }
+        // else { document.addEventListener("DOMContentLoaded", adjust, false); }
+        // if(window.attachEvent) { window.attachEvent('onload', adjust); }
+        // else if(window.addEventListener) { window.addEventListener('load', adjust, false ); }
+        // if(window.attachEvent) { window.attachEvent('onresize', adjust); }
+        // else if(window.addEventListener) { window.addEventListener('resize', adjust, false); }
+        var ajaxurl = 'https://darma.capital/wp-admin/admin-ajax.php', requid = '47efabc1b7';
+    </script>
+</head>
+
+<body>
+    <div id="app"></div>
+<script type="text/javascript" src="/app/js/common.2c3ce0c86a7ed0529da2.min.js"></script><script type="text/javascript" src="/app/js/main.7da6e651a5b0e1f4538b.min.js"></script><script type="text/javascript" src="/app/js/vendor.1e833769881055c4c735.min.js"></script></body>
+
+</html>
